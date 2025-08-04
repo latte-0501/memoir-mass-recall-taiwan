@@ -666,6 +666,16 @@
         @media (max-width: 768px) {
             .viewer-content {
                 padding: 16px;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .viewer-media {
+                max-width: calc(100vw - 32px);
+                max-height: calc(100vh - 32px);
+                width: auto;
+                height: auto;
+                object-fit: contain;
             }
             
             .viewer-close {
@@ -673,6 +683,7 @@
                 right: 16px;
                 width: 40px;
                 height: 40px;
+                z-index: 70;
             }
         }
 
